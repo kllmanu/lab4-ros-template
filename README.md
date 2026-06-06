@@ -2,8 +2,10 @@
 
 Oben rechts "Use this template" -> "Create a new repository"
 
-Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `zellij` (was Ralph in den Videos verwendet),
-weil man doch mehrere Sachen gleichzeitig ausführen muss.
+Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `screen`,
+weil man doch oft mehrere Sachen gleichzeitig ausführen muss.
+
+Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 ## Ubuntu installieren
 
