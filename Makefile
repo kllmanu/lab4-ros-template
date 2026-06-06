@@ -9,6 +9,9 @@ install:
 	curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | sudo apt-key add -
 	sudo apt-get update && sudo apt-get install -y ros-noetic-desktop-full
 	sudo apt-get install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+	wget -P /tmp/ https://github.com/zellij-org/zellij/releases/download/v0.44.3/zellij-x86_64-unknown-linux-musl.tar.gz
+	tar -xzf /tmp/zellij-x86_64-unknown-linux-musl.tar.gz -C /tmp/
+	sudo mv /tmp/zellij /usr/local/bin/
 
 setup:
 	mkdir -p $(HOME)/catkin_ws/src && cd $(HOME)/catkin_ws/src

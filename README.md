@@ -1,7 +1,8 @@
 # Lab 04b — Template
 
 Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `screen`,
-weil man doch oft mehrere Sachen gleichzeitig ausführen muss.
+weil man doch oft mehrere Sachen gleichzeitig ausführen muss. Beides davon wird mit dem
+Template im Container vorinstalliert.
 
 Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
@@ -30,9 +31,13 @@ mv lab4-ros-template-main catkin_ws
 cd ~/catkin_ws && make
 ```
 
+Beim Setup wird man mehrmals nach dem Passwort gefragt das man bei der Installation von Ubuntu 20.04 vergeben hat.
+
 Das Package für Lab4 ist bereits mit `catkin_create_pkg lab4` angelegt worden.
 
 ## Ausführen
+
+Zuerst `zellij` ausführen, wenn man möchte. :)
 
 ### Launch
 
