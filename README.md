@@ -1,7 +1,5 @@
 # Lab 04b — Template
 
-Oben rechts "Use this template" -> "Create a new repository"
-
 Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `screen`,
 weil man doch oft mehrere Sachen gleichzeitig ausführen muss.
 
