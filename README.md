@@ -8,6 +8,8 @@ Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 ## Ubuntu installieren
 
+Je nachdem was ihr für Betriebssystem habt.
+
 ### Windows 11 mit WSL2
 
 1. Terminal als Administrator ausführen (mit Shift Rechtsklick -> Als Administrator ausführen)
@@ -22,7 +24,9 @@ Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 ## Projekt aufsetzen
 
-Für das eigentliche Setup in Ubuntu 20.04 (man wird mehrmals nach dem Passwort gefragt):
+Für das eigentliche Setup in Ubuntu 20.04 (für diejenigen die Windows verwenden, ihr müsst einen neuen Tab im Terminal mit Ubuntu 20.04 aufmachen):
+
+Man wird dabei mehrmals nach dem Passwort gefragt, das ihr bei der Installation von Ubuntu angegeben habt.
 
 ```
 cd && sudo apt-get update -y && sudo apt-get -y install unzip make && \
@@ -40,9 +44,10 @@ Was das Setup bereits für uns macht:
 
 ## Ausführen
 
-Zuerst `zellij` ausführen, wenn man möchte.
+Zuerst `zellij` ausführen, wenn man möchte. Tutorials dazu findet man auf Youtube.
 
-Der `roslaunch`er kann entweder per `Ctrl-l` oder mit `make launch`.
+Der `roslaunch`er kann entweder per `Ctrl-l` oder mit `make launch` ausgeführt werden.
+
 Wer hat schon Bock drauf das alles von Hand einzugeben? 😜
 
 Mit `make control` lässt sich der Roboter steuern.
