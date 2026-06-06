@@ -1,10 +1,5 @@
 # Lab 04b — Template
 
-Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `screen`,
-weil man doch oft mehrere Sachen gleichzeitig ausführen muss. Beides davon wird mit dem
-Template im Container vorinstalliert.
-
-Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 ## Ubuntu installieren
 
@@ -61,6 +56,12 @@ Was das Setup bereits für uns macht:
 ## Ausführen
 
 Die Befehle müssen natürlich alle unter Ubuntu ausgeführt werden, sollte klar sein.
+
+Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `screen`,
+weil man doch oft mehrere Sachen gleichzeitig ausführen muss. Beides davon wird mit dem
+Template im Container vorinstalliert.
+
+Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 Zuerst `zellij` ausführen, wenn man möchte. Tutorials dazu findet man auf Youtube.
 
