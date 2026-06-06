@@ -40,16 +40,9 @@ Was das Setup bereits mit sich bringt:
 
 ## Ausführen
 
-Zuerst `zellij` ausführen, wenn man möchte. :)
+Zuerst `zellij` ausführen, wenn man möchte.
 
-Der `roslaunch`er kann entweder per make ausgeführt werden oder mit `Ctrl-l`.
+Der `roslaunch`er kann entweder per `Ctrl-l` oder mit `make launch`.
+Wer hat schon Bock drauf das alles von Hand einzugeben? 😜
 
-### Launch
-
-Mit `make launch` einen bequemen Wrapper für `roslaunch` ausführen. Per `fzf`
-wird zuerst nach dem Package gefragt (in der Regel `turtlebot3_gazebo`)
-und dann das gewünschte Launch file ausgewählt.
-
-### Control
-
-Mit `make control` den Bot steuern.
+Mit `make control` lässt sich der Roboter steuern.
