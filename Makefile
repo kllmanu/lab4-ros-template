@@ -19,12 +19,13 @@ setup:
 	git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
 	git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
 	git clone -b noetic https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+	echo "source /opt/ros/noetic/setup.bash" >> $(HOME)/.bashrc
 	echo "source ~/catkin_ws/devel/setup.bash" >> $(HOME)/.bashrc
 	echo "source ~/catkin_ws/roslaunch_picker.bash" >> $(HOME)/.bashrc
 	echo "export TURTLEBOT3_MODEL=waffle_pi" >> $(HOME)/.bashrc
 	echo "export DISABLE_ROS1_EOL_WARNINGS=1" >> $(HOME)/.bashrc
 	echo "export LIBGL_ALWAYS_SOFTWARE=1" >> $(HOME)/.bashrc
-	git init
+	git init ~/catkin_ws
 
 build:
 	source /opt/ros/noetic/setup.bash
