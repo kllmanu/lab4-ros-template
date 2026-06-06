@@ -31,7 +31,7 @@ mv lab4-ros-template-main catkin_ws
 cd ~/catkin_ws && make && bash
 ```
 
-Was das Setup bereits mit sich bringt:
+Was das Setup bereits für uns macht:
 
 - die `~/catkin_ws/devel/setup.bash` über die `~/.bashrc` sourcen
 - `TURTLEBOT3_MODEL=waffle_pi` über die `~/.bashrc` setzen
