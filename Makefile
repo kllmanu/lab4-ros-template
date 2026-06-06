@@ -22,6 +22,7 @@ setup:
 	echo "source ~/catkin_ws/devel/setup.bash" >> $(HOME)/.bashrc
 	echo "export TURTLEBOT3_MODEL=waffle_pi" >> $(HOME)/.bashrc
 	echo "export DISABLE_ROS1_EOL_WARNINGS=1" >> $(HOME)/.bashrc
+	echo "export LIBGL_ALWAYS_SOFTWARE=1" >> $(HOME)/.bashrc
 
 
 build:

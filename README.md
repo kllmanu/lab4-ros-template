@@ -22,18 +22,21 @@ Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 ## Projekt aufsetzen
 
-Für das eigentliche Setup in Ubuntu 20.04:
+Für das eigentliche Setup in Ubuntu 20.04 (man wird mehrmals nach dem Passwort gefragt):
 
 ```
 cd
 wget https://github.com/kllmanu/lab4-ros-template/archive/refs/heads/main.zip -O repo.zip && unzip repo.zip && rm repo.zip
 mv lab4-ros-template-main catkin_ws
-cd ~/catkin_ws && make
+cd ~/catkin_ws && make && bash
 ```
 
-Beim Setup wird man mehrmals nach dem Passwort gefragt das man bei der Installation von Ubuntu 20.04 vergeben hat.
+Was das Setup bereits mit sich bringt:
 
-Das Package für Lab4 ist bereits mit `catkin_create_pkg lab4` angelegt worden.
+- die `~/catkin_ws/devel/setup.bash` über die `~/.bashrc` sourcen
+- `TURTLEBOT3_MODEL=waffle_pi` über die `~/.bashrc` setzen
+- `LIBGL_ALWAYS_SOFTWARE=1` über die `~/.bashrc` setzen
+- das Package für Lab4 mit `catkin_create_pkg lab4` anlegen
 
 ## Ausführen
 
