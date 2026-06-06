@@ -1,5 +1,19 @@
 # Lab 04b — Template
 
+4. Semester, Systemarchitekturen, FHV — Software & Information Engineering
+
+Tldr; Warum das alles?
+
+Das Projekt aufsetzen, so wie es in der PDF beschrieben ist funktioniert nicht richtig. Einige Probleme auf die ich gestoßen bin:
+
+- die Installation aus den Repositories von Ubuntu hat nicht funktioniert, man muss zuerst die Repositories von ROS1 hinzufügen
+- die Packages die wir per `git clone` vom Source installieren sollen, müssen vom `-b noetic` Branch geklont werden
+- es fehlte noch ein Package für den Lidar Sensor
+- **generell sind die Anweisungen in der PDF sehr ungenau** und die Developer Experience (DX) ist eher mau
+
+Die Lösung: Ein Template um mit Lab4 zu starten ohne dass man sich verkopfen muss. 🌈
+
+Alternative: Schaut ins [Makefile](./Makefile) und führt die Anweisungen manuell aus.
 
 ## Ubuntu installieren
 
@@ -66,11 +80,17 @@ Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 Zuerst `zellij` ausführen, wenn man möchte. Tutorials dazu findet man auf Youtube.
 
-Der `roslaunch`er kann entweder per `Ctrl-l` oder mit `make launch` ausgeführt werden.
+### roslaunch
 
-Wer hat schon Bock drauf das alles von Hand einzugeben? 😜
+Den `roslaunch`er müssen wir doch recht oft ausführen. Aber wer hat schon Bock drauf das alles von Hand einzugeben? 😜
+Abhilfe schafft ein kleines Tool das in dieses Template integriert ist. Es lässt ich entweder per `Ctrl-l` oder mit
+`make launch` starten.
+
+[![asciicast](https://asciinema.org/a/1200780.svg)](https://asciinema.org/a/1200780)
 
 Mit `make control` lässt sich der Roboter steuern.
+
+## Verwendung von KI
 
 Gemini oder Claude Code anweisen die einzelnen Schritte in `~/catkin_ws/src/lab4` umzusetzen.
 
