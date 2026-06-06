@@ -10,7 +10,7 @@ Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
 Je nachdem was ihr für Betriebssystem habt.
 
-### Windows 11 mit WSL2
+### für Windows 11 mit WSL2
 
 1. Terminal als Administrator ausführen (mit Shift Rechtsklick -> Als Administrator ausführen)
 2. `wsl --install -d Ubuntu-20.04` eingeben
@@ -20,7 +20,9 @@ Je nachdem was ihr für Betriebssystem habt.
 <img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/90af2a6c-ac3e-4001-b6fe-bd79ae76053a" />
 <img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/e2c82c47-1345-43ea-92e0-e22c1642fef1" />
 
-### Linux (getestet unter Fedora 44)
+### für Linux (getestet unter Fedora 44)
+
+Nur wenn ihr ein GNU/Linux auf eurem Laptop installiert habt:
 
 1. [Distrobox](https://distrobox.it/) installieren
 2. `distrobox create --image ubuntu:20.04 --name ros-noetic --home ~/.local/share/ros-home`
