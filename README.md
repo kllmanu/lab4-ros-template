@@ -2,7 +2,7 @@
 
 4. Semester, Systemarchitekturen, FHV — Software & Information Engineering
 
-Tldr; Warum das alles?
+## TLDR: Warum das alles?
 
 Das Projekt aufsetzen, so wie es in der PDF beschrieben ist funktioniert nicht richtig. Einige Probleme auf die ich gestoßen bin:
 
