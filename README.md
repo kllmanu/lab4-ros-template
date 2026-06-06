@@ -1,5 +1,7 @@
 # Lab 04b — Template
 
+Oben rechts "Use this template" -> "Create a new repository"
+
 ## Installation
 
 ### Windows 11 mit WSL2
