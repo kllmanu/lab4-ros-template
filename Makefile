@@ -25,8 +25,10 @@ setup:
 	echo "export DISABLE_ROS1_EOL_WARNINGS=1" >> $(HOME)/.bashrc
 	echo "export LIBGL_ALWAYS_SOFTWARE=1" >> $(HOME)/.bashrc
 
-
 build:
+	source /opt/ros/noetic/setup.bash
+	sudo rosdep init
+	rosdep update
 	rosdep install --from-paths src -i -y
 	@catkin_make
 
