@@ -16,6 +16,10 @@ Je nachdem was ihr für Betriebssystem habt.
 2. `wsl --install -d Ubuntu-20.04` eingeben
 3. Neuen Tab mit **Ubuntu 20.04** öffnen
 
+<img width="801" height="742" alt="image" src="https://github.com/user-attachments/assets/10bd067d-1d5d-45fa-9175-ded3b8e588d8" />
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/90af2a6c-ac3e-4001-b6fe-bd79ae76053a" />
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/e2c82c47-1345-43ea-92e0-e22c1642fef1" />
+
 ### Linux (getestet unter Fedora 44)
 
 1. [Distrobox](https://distrobox.it/) installieren
@@ -26,7 +30,7 @@ Je nachdem was ihr für Betriebssystem habt.
 
 Für das eigentliche Setup in Ubuntu 20.04 (für diejenigen die Windows verwenden, ihr müsst einen neuen Tab im Terminal mit Ubuntu 20.04 aufmachen):
 
-Man wird dabei mehrmals nach dem Passwort gefragt, das ihr bei der Installation von Ubuntu angegeben habt.
+Man wird dabei ggf. mehrmals nach dem Passwort gefragt, das ihr bei der Installation von Ubuntu angegeben habt.
 
 ```
 cd && sudo apt-get update -y && sudo apt-get -y install unzip make && \
@@ -35,20 +39,21 @@ mv lab4-ros-template-main catkin_ws && \
 cd ~/catkin_ws && make && source ~/.bashrc
 ```
 
+Code kopieren und einfügen:
+
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/f92fa912-22e9-48f7-ab52-31301f775d7f" />
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/fb296a8c-2d60-418d-8160-bb4f346f43d3" />
+
+Das Projekt findet sich dann unter Windows 11 mit WSL2 unter:
+
+<img width="1129" height="924" alt="image" src="https://github.com/user-attachments/assets/efab5c3f-5c92-493e-b40b-2c6df9ee68e5" />
+
 Was das Setup bereits für uns macht:
 
 - die `~/catkin_ws/devel/setup.bash` über die `~/.bashrc` sourcen
 - `TURTLEBOT3_MODEL=waffle_pi` über die `~/.bashrc` setzen
 - `LIBGL_ALWAYS_SOFTWARE=1` über die `~/.bashrc` setzen
 - das Package für Lab4 mit `catkin_create_pkg lab4` anlegen
-
-Das Projekt findet sich dann unter Windows 11 mit WSL2 unter:
-
-```
-`\\wsl.localhost\Ubuntu-20.04\home\manko\catkin_ws`
-```
-
-Einfach kopieren und in die Addressleiste im Explorer einfügen.
 
 ## Ausführen
 
