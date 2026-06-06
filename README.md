@@ -42,6 +42,8 @@ Was das Setup bereits mit sich bringt:
 
 Zuerst `zellij` ausführen, wenn man möchte. :)
 
+Der `roslaunch`er kann entweder per make ausgeführt werden oder mit `Ctrl-l`.
+
 ### Launch
 
 Mit `make launch` einen bequemen Wrapper für `roslaunch` ausführen. Per `fzf`
