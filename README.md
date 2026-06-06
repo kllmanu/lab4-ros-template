@@ -15,6 +15,7 @@ Je nachdem was ihr für Betriebssystem habt.
 1. Terminal als Administrator ausführen (mit Shift Rechtsklick -> Als Administrator ausführen)
 2. `wsl --install -d Ubuntu-20.04` eingeben
 3. Neuen Tab mit **Ubuntu 20.04** öffnen
+4. Ubuntu Mono Font [installieren](https://fonts.google.com/specimen/Ubuntu+Mono) (optional)
 
 <img width="801" height="742" alt="image" src="https://github.com/user-attachments/assets/10bd067d-1d5d-45fa-9175-ded3b8e588d8" />
 <img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/90af2a6c-ac3e-4001-b6fe-bd79ae76053a" />
@@ -59,6 +60,8 @@ Was das Setup bereits für uns macht:
 
 ## Ausführen
 
+Die Befehle müssen natürlich alle unter Ubuntu ausgeführt werden, sollte klar sein.
+
 Zuerst `zellij` ausführen, wenn man möchte. Tutorials dazu findet man auf Youtube.
 
 Der `roslaunch`er kann entweder per `Ctrl-l` oder mit `make launch` ausgeführt werden.
@@ -66,3 +69,7 @@ Der `roslaunch`er kann entweder per `Ctrl-l` oder mit `make launch` ausgeführt 
 Wer hat schon Bock drauf das alles von Hand einzugeben? 😜
 
 Mit `make control` lässt sich der Roboter steuern.
+
+Gemini oder Claude Code anweisen die einzelnen Schritte in `~/catkin_ws/src/lab4` umzusetzen.
+
+Nach jedem Schritt ein Commit -> auf Sicht fahren und versuchen nachzuvollziehen was die KI macht. 
