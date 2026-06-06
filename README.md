@@ -41,8 +41,9 @@ Code kopieren und einfügen:
 
 <img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/f92fa912-22e9-48f7-ab52-31301f775d7f" />
 <img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/fb296a8c-2d60-418d-8160-bb4f346f43d3" />
+<img width="1115" height="628" alt="image" src="https://github.com/user-attachments/assets/30b91c18-4526-4c36-800b-27b13f14523e" />
 
-Das Projekt findet sich dann unter Windows 11 mit WSL2 unter:
+Nach der Installation, findet sich das Projekt dann unter:
 
 <img width="1129" height="924" alt="image" src="https://github.com/user-attachments/assets/efab5c3f-5c92-493e-b40b-2c6df9ee68e5" />
 
