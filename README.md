@@ -25,10 +25,9 @@ Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 Für das eigentliche Setup in Ubuntu 20.04 (man wird mehrmals nach dem Passwort gefragt):
 
 ```
-cd
-sudo apt-get update -y && sudo apt-get -y install unzip make
-wget https://github.com/kllmanu/lab4-ros-template/archive/refs/heads/main.zip -O repo.zip && unzip repo.zip && rm repo.zip
-mv lab4-ros-template-main catkin_ws
+cd && sudo apt-get update -y && sudo apt-get -y install unzip make && \
+wget https://github.com/kllmanu/lab4-ros-template/archive/refs/heads/main.zip -O repo.zip && unzip repo.zip && rm repo.zip && \
+mv lab4-ros-template-main catkin_ws && \
 cd ~/catkin_ws && make && source ~/.bashrc
 ```
 
