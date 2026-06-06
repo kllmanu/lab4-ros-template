@@ -29,7 +29,7 @@ cd
 sudo apt-get update -y && sudo apt-get -y install unzip make
 wget https://github.com/kllmanu/lab4-ros-template/archive/refs/heads/main.zip -O repo.zip && unzip repo.zip && rm repo.zip
 mv lab4-ros-template-main catkin_ws
-cd ~/catkin_ws && make && bash
+cd ~/catkin_ws && make && source ~/.bashrc
 ```
 
 Was das Setup bereits für uns macht:
