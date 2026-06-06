@@ -42,8 +42,13 @@ Was das Setup bereits für uns macht:
 - `LIBGL_ALWAYS_SOFTWARE=1` über die `~/.bashrc` setzen
 - das Package für Lab4 mit `catkin_create_pkg lab4` anlegen
 
+Das Projekt findet sich dann unter Windows 11 mit WSL2 unter:
 
-[Open Folder in VS Code](vscode://vscode-remote/wsl+Ubuntu-20.04/home/manko/catkin_ws)
+```
+`\\wsl.localhost\Ubuntu-20.04\home\manko\catkin_ws`
+```
+
+Einfach kopieren und in die Addressleiste im Explorer einfügen.
 
 ## Ausführen
 
