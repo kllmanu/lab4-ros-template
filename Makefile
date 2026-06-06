@@ -1,0 +1,35 @@
+.ONESHELL:
+.PHONY: install setup build clean launch control
+
+all: install clean setup build
+
+install:
+	sudo apt-get update && sudo apt-get install -y curl gnupg2 lsb-release git vim fzf
+	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $$(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
+	curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | sudo apt-key add -
+	sudo apt-get update && sudo apt-get install -y ros-noetic-desktop-full
+	sudo apt-get install -y python3-rosdep python3-rosinstall python3-rosinstall-generator python3-wstool build-essential
+
+setup:
+	mkdir -p $(HOME)/catkin_ws/src && cd $(HOME)/catkin_ws/src
+	git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3.git
+	git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_msgs.git
+	git clone -b noetic https://github.com/ROBOTIS-GIT/turtlebot3_simulations.git
+	git clone -b noetic https://github.com/ROBOTIS-GIT/hls_lfcd_lds_driver.git
+	echo "source ~/catkin_ws/devel/setup.bash" >> $(HOME)/.bashrc
+	echo "export TURTLEBOT3_MODEL=waffle_pi" >> $(HOME)/.bashrc
+	echo "export DISABLE_ROS1_EOL_WARNINGS=1" >> $(HOME)/.bashrc
+
+
+build:
+	rosdep install --from-paths src -i -y
+	@catkin_make
+
+clean:
+	@rm -rf build/ devel/ logs/ src/
+
+launch:
+	@./bin/rsl
+
+control:
+	roslaunch turtlebot3_teleop turtlebot3_teleop_key.launch

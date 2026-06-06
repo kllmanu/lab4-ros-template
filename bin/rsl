@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+export DISABLE_ROS1_EOL_WARNINGS=1
+export TURTLEBOT3_MODEL=waffle_pi
+
+# Source environments
+source /opt/ros/noetic/setup.bash
+source ~/catkin_ws/devel/setup.bash
+
+# 1. Select the ROS package
+package="${1:-$(rospack list-names | fzf --prompt="Select ROS Package > ")}"
+[ -z "$package" ] && exit 0
+
+# Get the package directory path
+pkg_path=$(rospack find "$package")
+
+# 2. Find all launch files, let fzf show just the file name, but capture the full path
+chosen_path=$(find "$pkg_path" -name "*.launch" -type f 2>/dev/null | fzf --delimiter="/" --with-nth=-1 --prompt="$package > ")
+[ -z "$chosen_path" ] && exit 0
+
+# 3. Extract JUST the pure filename from the chosen path
+launch_file=$(basename "$chosen_path")
+
+# 4. Launch it!
+echo "Executing: roslaunch $package $launch_file"
+roslaunch "$package" "$launch_file"
