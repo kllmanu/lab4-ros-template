@@ -32,6 +32,8 @@ mv lab4-ros-template-main catkin_ws
 cd ~/catkin_ws && make
 ```
 
+Das Package für Lab4 ist bereits mit `catkin_create_pkg lab4` angelegt worden.
+
 ## Ausführen
 
 ### Launch
