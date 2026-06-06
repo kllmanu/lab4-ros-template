@@ -4,7 +4,7 @@
 all: install clean setup build
 
 install:
-	sudo apt-get update && sudo apt-get install -y curl gnupg2 lsb-release git vim fzf
+	sudo apt-get update && sudo apt-get install -y curl gnupg2 lsb-release git vim fzf tmux
 	sudo sh -c 'echo "deb http://packages.ros.org/ros/ubuntu $$(lsb_release -sc) main" > /etc/apt/sources.list.d/ros-latest.list'
 	curl -s https://raw.githubusercontent.com/ros/rosdistro/master/ros.key | sudo apt-key add -
 	sudo apt-get update && sudo apt-get install -y ros-noetic-desktop-full

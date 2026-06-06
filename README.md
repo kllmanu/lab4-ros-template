@@ -2,7 +2,10 @@
 
 Oben rechts "Use this template" -> "Create a new repository"
 
-## Installation
+Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `zellij` (was Ralph in den Videos verwendet),
+weil man doch mehrere Sachen gleichzeitig ausführen muss.
+
+## Ubuntu installieren
 
 ### Windows 11 mit WSL2
 
@@ -16,7 +19,7 @@ Oben rechts "Use this template" -> "Create a new repository"
 2. `distrobox create --image ubuntu:20.04 --name ros-noetic --home ~/.local/share/ros-home`
 3. `distrobox enter ros-noetic`
 
-## Setup
+## Projekt aufsetzen
 
 Für das eigentliche Setup in Ubuntu 20.04:
 
