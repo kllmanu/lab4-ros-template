@@ -7,7 +7,7 @@
 Das Projekt aufsetzen, so wie es in der PDF beschrieben ist funktioniert nicht richtig. Einige Probleme auf die ich gestoßen bin:
 
 - die Installation aus den Repositories von Ubuntu hat nicht funktioniert, man muss zuerst die Repositories von ROS1 hinzufügen
-- die Packages die wir per `git clone` vom Source installieren sollen, müssen vom `-b noetic` Branch geklont werden
+- die Packages die wir per `git clone` vom Source installieren sollen, müssen inzwischen vom `noetic` Branch geklont werden
 - es fehlte noch ein Package für den Lidar Sensor
 - **generell sind die Anweisungen in der PDF sehr ungenau** und die Developer Experience (DX) ist eher mau
 
