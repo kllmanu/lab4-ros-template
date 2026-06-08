@@ -57,13 +57,11 @@ Was das Setup bereits für uns macht:
 
 Die Befehle müssen natürlich alle unter Ubuntu ausgeführt werden, sollte klar sein.
 
-Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `screen`,
+Es rentiert sich einen Terminal Multiplexer zu verwenden, wie zB `tmux` oder `zellij`,
 weil man doch oft mehrere Sachen gleichzeitig ausführen muss. Beides davon wird mit dem
 Template im Container vorinstalliert.
 
 Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
-
-Zuerst `zellij` ausführen, wenn man möchte. Tutorials dazu findet man auf Youtube.
 
 ### roslaunch
 
@@ -72,11 +70,3 @@ Abhilfe schafft ein kleines Tool das in dieses Template integriert ist. Es läss
 `make launch` starten.
 
 [![asciicast](https://asciinema.org/a/1200780.svg)](https://asciinema.org/a/1200780)
-
-Mit `make control` lässt sich der Roboter steuern.
-
-## Verwendung von KI
-
-Gemini oder Claude Code anweisen die einzelnen Schritte in `~/catkin_ws/src/lab4` umzusetzen.
-
-Nach jedem Schritt ein Commit -> auf Sicht fahren und versuchen nachzuvollziehen was die KI macht. 
