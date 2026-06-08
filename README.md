@@ -1,20 +1,5 @@
 # Lab 04b — Template
 
-4. Semester, Systemarchitekturen, FHV — Software & Information Engineering
-
-## TLDR: Warum das alles?
-
-Das Projekt aufsetzen, so wie es in der PDF beschrieben ist funktioniert nicht richtig. Einige Probleme auf die ich gestoßen bin:
-
-- die Installation aus den Repositories von Ubuntu hat nicht funktioniert, man muss zuerst die Repositories von ROS1 hinzufügen
-- die Packages die wir per `git clone` vom Source installieren sollen, müssen inzwischen vom `noetic` Branch geklont werden
-- es fehlte noch ein Package für den Lidar Sensor
-- **generell sind die Anweisungen in der PDF sehr ungenau** und die Developer Experience (DX) ist eher mau
-
-Die Lösung: Ein Template um mit Lab4 zu starten ohne dass man sich verkopfen muss. 🌈
-
-Alternative: Schaut ins [Makefile](./Makefile) und führt die Anweisungen manuell aus.
-
 ## Ubuntu installieren
 
 Je nachdem was ihr für Betriebssystem habt.
