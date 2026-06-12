@@ -63,10 +63,3 @@ Template im Container vorinstalliert.
 
 Ralph verwendet in seinen Videos [zellij](https://zellij.dev/).
 
-### roslaunch
-
-Den `roslaunch`er müssen wir doch recht oft ausführen. Aber wer hat schon Bock drauf das alles von Hand einzugeben? 😜
-Abhilfe schafft ein kleines Tool das in dieses Template integriert ist. Es lässt ich entweder per `Ctrl-l` oder mit
-`make launch` starten.
-
-[![asciicast](https://asciinema.org/a/1200780.svg)](https://asciinema.org/a/1200780)
